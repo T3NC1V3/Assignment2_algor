@@ -6,7 +6,7 @@ using namespace std;
 
 // Beep beep
 void beep() {
-    Beep(1000, 100); // Beep at 1000 Hz for 100 milliseconds
+    Beep(1000, 200); // Beep sfx
 }
 
 void printArray(const vector<int>& arr) {
@@ -29,7 +29,7 @@ void merge(vector<int>& arr, int left, int mid, int right) {
     for (int j = 0; j < n2; j++)
         R[j] = arr[mid + 1 + j];
 
-    // Merge the temporary arrays back into arr[left..right]
+    // Merge the temporary arrays back
     int i = 0, j = 0, k = left;
     while (i < n1 && j < n2) {
         if (L[i] <= R[j]) {
